@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  mongodb:
+    container_name: mongo
+    image: mongo:4
+    volumes:
+      - ./db_data/:/data/db/
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=username
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    command: --quiet
+    logging:
+      driver: "json-file"
+    restart: always
