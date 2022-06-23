@@ -16,3 +16,4 @@ MongoDB (NoSQL) With Spring Boot using Spring Data.
 ## TO-DO:
 * Readme 
 * Tests
+* Create DB on start with data
